@@ -1,5 +1,5 @@
-import React, {Fragment, useState} from 'react';
-import './Navbar.css';
+import React, {Fragment, useState, useEffect} from 'react';
+import '../styles/Navbar.css';
 import {Link} from 'react-router-dom';
 import { Button } from './Button';
 
@@ -22,7 +22,13 @@ function Navbar() {
             setButton(true);
         }
     };
+
+    useEffect(() => {
+        ShowButton();
+    }, []);
+
     window.addEventListener('resize', ShowButton)
+
     return (
         <Fragment>
                 <nav className='navbar'>
@@ -78,4 +84,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;
