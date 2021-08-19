@@ -1,14 +1,14 @@
 
 import React from 'react'
 import '../styles/HeroSection.css';
-import video from '../assets/videos/video-2.mp4'
+import tlsvid from '../assets/videos/video-3.mp4'
 import { Button } from './Button'
 
 
 function HeroSection() {
     return (
         <div className="hero-container">
-            <video src={video} autoPlay loop muted />
+            <video src={ tlsvid } autoPlay loop muted  />
             <h1>WE ARE WAITING FOR YOUR VISIT IN TIMOR LESTE</h1>
             <p>What are you waiting for ?</p>
             <div className="hero-btns">
